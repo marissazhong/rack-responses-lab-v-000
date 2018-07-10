@@ -2,7 +2,7 @@ class Application
 
   def call(env)
     resp = Rack::Response.new
-    resp.write Time.now.to_i
+    resp.write Time.hour
 
     # if Time.now > 12
     #   resp.write "Good Afternoon!"
